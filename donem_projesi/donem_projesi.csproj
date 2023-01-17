@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F0F631E-4578-437C-98D7-4EA47C537CA7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>donem_projesi</RootNamespace>
+    <AssemblyName>donem_projesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="foreach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foreach.Designer.cs">
+      <DependentUpon>foreach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgiris.Designer.cs">
+      <DependentUpon>frmgiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmguvenlikgirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmguvenlikgirisi.Designer.cs">
+      <DependentUpon>frmguvenlikgirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmguvenlikkaydetsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmguvenlikkaydetsil.Designer.cs">
+      <DependentUpon>frmguvenlikkaydetsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmguvenlikplanı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmguvenlikplanı.Designer.cs">
+      <DependentUpon>frmguvenlikplanı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgüvenliknöbet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgüvenliknöbet.Designer.cs">
+      <DependentUpon>frmgüvenliknöbet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmodano_yatakno_kayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmodano_yatakno_kayıt.Designer.cs">
+      <DependentUpon>frmodano_yatakno_kayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmodemedurumu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmodemedurumu.Designer.cs">
+      <DependentUpon>frmodemedurumu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmogrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmogrenci.Designer.cs">
+      <DependentUpon>frmogrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmogrencibilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmogrencibilgi.Designer.cs">
+      <DependentUpon>frmogrencibilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmogrenciduyuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmogrenciduyuru.Designer.cs">
+      <DependentUpon>frmogrenciduyuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmogrencigirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmogrencigirisi.Designer.cs">
+      <DependentUpon>frmogrencigirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmogrenciizin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmogrenciizin.Designer.cs">
+      <DependentUpon>frmogrenciizin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmogrencikayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmogrencikayıt.Designer.cs">
+      <DependentUpon>frmogrencikayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmogrenciodeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmogrenciodeme.Designer.cs">
+      <DependentUpon>frmogrenciodeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmogrencipaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmogrencipaneli.Designer.cs">
+      <DependentUpon>frmogrencipaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmyonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmyonetici.Designer.cs">
+      <DependentUpon>frmyonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmyoneticikayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmyoneticikayıt.Designer.cs">
+      <DependentUpon>frmyoneticikayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmyoneticigirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmyoneticigirisi.Designer.cs">
+      <DependentUpon>frmyoneticigirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmyurtetkinlikleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmyurtetkinlikleri.Designer.cs">
+      <DependentUpon>frmyurtetkinlikleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="metot_kullan.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlbaglantisi.cs" />
+    <EmbeddedResource Include="foreach.resx">
+      <DependentUpon>foreach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgiris.resx">
+      <DependentUpon>frmgiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmguvenlikgirisi.resx">
+      <DependentUpon>frmguvenlikgirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmguvenlikkaydetsil.resx">
+      <DependentUpon>frmguvenlikkaydetsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmguvenlikplanı.resx">
+      <DependentUpon>frmguvenlikplanı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgüvenliknöbet.resx">
+      <DependentUpon>frmgüvenliknöbet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmodano_yatakno_kayıt.resx">
+      <DependentUpon>frmodano_yatakno_kayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmodemedurumu.resx">
+      <DependentUpon>frmodemedurumu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmogrenci.resx">
+      <DependentUpon>frmogrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmogrencibilgi.resx">
+      <DependentUpon>frmogrencibilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmogrenciduyuru.resx">
+      <DependentUpon>frmogrenciduyuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmogrencigirisi.resx">
+      <DependentUpon>frmogrencigirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmogrenciizin.resx">
+      <DependentUpon>frmogrenciizin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmogrencikayıt.resx">
+      <DependentUpon>frmogrencikayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmogrenciodeme.resx">
+      <DependentUpon>frmogrenciodeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmogrencipaneli.resx">
+      <DependentUpon>frmogrencipaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmyonetici.resx">
+      <DependentUpon>frmyonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmyoneticikayıt.resx">
+      <DependentUpon>frmyoneticikayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmyoneticigirisi.resx">
+      <DependentUpon>frmyoneticigirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmyurtetkinlikleri.resx">
+      <DependentUpon>frmyurtetkinlikleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
